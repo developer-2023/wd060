@@ -5,15 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            /* font-size: 12px; */
+        }
         div {
-            width: 120px;
+            width: 85%;
             height: 35px;
-            border: 4px solid red;;
+            border: 4px solid red;
+            font-size: 0.5rem;
+        } 
+        p {
+            font-size: 0.9rem;
+            margin: 0.2em;
+            padding: 5px;
+            background-color: lightgreen;;
+        }
+        article {
+            font-size: 2rem;
+            background-color: lightblue;
+            width: 70%;
+        }
+        li {
+            font-size: 0.8em;
+        }
+        li li {
+            font-size: 1em;
         }
     </style>
-</head>
-<body>
-    <div>Lorem ipsum dolor sit amet.</div>
-    <p>Lorem ipsum dolor sit.</p>
+</head> 
+<body>body 16px
+    <div>
+        div 0.5em (parent body)
+    </div>
+    <article>article 2em (parent div)</article>
+    <p>paragraph 0.9em (parent body)</p>
+    <ul>
+        <li>
+            1st level
+            <ul>
+                <li>
+                    2nd level
+                    <ul>
+                        <li>
+                            3rd level
+                            <ul>
+                                <li>
+                                    4th level
+                                    <ul>
+                                        <li>
+                                            5th level
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
